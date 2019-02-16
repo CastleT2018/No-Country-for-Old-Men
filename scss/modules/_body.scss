@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Charm:400,700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,700");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+* {
+  outline: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Charm", cursive;
+  font-family: "Noto Serif TC", serif;
+  overflow-x: hidden;
+}
+p {
+  font-size: $base-font-size;
+}

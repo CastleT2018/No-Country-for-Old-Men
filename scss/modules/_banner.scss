@@ -1,0 +1,103 @@
+#banner {
+  .banner {
+    @media screen and (max-width: 768px) {
+      min-height: 100vh;
+      padding: 100px 0;
+    }
+    @media screen and (max-width: 576px) {
+      min-height: 100vh;
+      padding: 100px 0;
+    }
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/logo/bg-1-1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      background: linear-gradient($primary-color, transparent);
+      pointer-events: none;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(360deg, $primary-color, transparent);
+      pointer-events: none;
+    }
+    .height100p {
+      height: 100%;
+    }
+    .content-box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 10;
+      h1 {
+        font-weight: 700;
+        color: $warning-color;
+        text-transform: uppercase;
+        font-size: $font-size * 2;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+        @media screen and (max-width: 768px) {
+          font-size: $base-font-size * 2;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: $font-size;
+        }
+      }
+      p {
+        color: $light-color;
+        text-transform: uppercase;
+        font-size: $base-font-size;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+        margin-top: 30px;
+        @media screen and (max-width: 576px) {
+          font-size: $base-font-size * 0.9;
+        }
+      }
+    }
+  }
+  .topdown {
+    position: relative;
+    top: 100px;
+    @media screen and (max-width: 576px) {
+          top: 10px;
+        }
+  }
+  .btnD1 {
+    border: 2px solid $light-color;
+    color: $light-color;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: $base-font-size;
+    line-height: $font-size;
+    outline: none;
+    font-family: "Permanent Marker", cursive;
+    margin-top: 20px;
+    text-align: center;
+    transition: 0.3s;
+    @media screen and (max-width: 768px) {
+      font-size: $base-font-size * 0.9;
+      padding: 0 8px;
+    }
+    &:hover {
+      color: $warning-color;
+      background-color: $light-color;
+    }
+  }
+}

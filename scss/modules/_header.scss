@@ -1,0 +1,41 @@
+header {
+  .navbar {
+    // position: fixed !important;
+    // z-index: 30;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    text-transform: uppercase;
+    font-family: "Permanent Marker", cursive;
+  }
+  .navbar-brand img {
+    height: 2rem;
+  }
+  .navbar-nav {
+    font-size: 0;
+  }
+  .nav-link {
+    line-height: $font-size;
+    padding: 0 1.5rem !important;
+    font-size: $base-font-size;
+    color: $light-color !important;
+    // transition: 0.5s;
+    @media screen and (max-width: 768px) {
+      padding: 0.5rem 0 !important;
+      text-align: center;
+    }
+    &.active {
+      color: $warning-color !important;
+      background: $light-color;
+    }
+    &:hover {
+      color: $warning-color !important;
+      background: $light-color;
+    }
+  }
+
+  .navbar-toggler {
+    @media screen and (max-width: 768px) {
+      background: $light-color;
+      border-radius: 0;
+    }
+  }
+}

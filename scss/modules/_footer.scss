@@ -1,0 +1,41 @@
+footer {
+  // position: relative;
+  padding: 50px 0 0;
+  background-color: $primary-color;
+  @media screen and (max-width: 768px) {
+    padding: 20px 0 0;
+  }
+  .sci {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    list-style: none;
+    margin: 0 20px;
+    a {
+      color: $light-color;
+      font-size: $base-font-size * 2;
+      transition: 0.5s;
+      &:hover {
+        color: $warning-color;
+      }
+    }
+  }
+  .cpryt {
+    border-top: 1px solid $dark-color;
+    color: $light-color;
+    font-size: $base-font-size;
+    @media screen and (max-width: 768px) {
+      font-size: $base-font-size * 0.8;
+    }
+    a {
+      color: $danger-color;
+      &:hover {
+        color: $warning-color;
+      }
+    }
+  }
+}
